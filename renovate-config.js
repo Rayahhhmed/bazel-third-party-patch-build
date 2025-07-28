@@ -11,8 +11,7 @@ module.exports = {
     prHourlyLimit: 0,
     enabledManagers: ["bazel", "bazel-module"],
     includePaths: [
-      "MODULE.bazel",
-      "WORKSPACE",
+      "third_party/**",
     ],
     ignorePaths: [
       "**/node_modules/**",
