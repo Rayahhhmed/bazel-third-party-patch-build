@@ -1,0 +1,565 @@
+DEBUG: Using RE2 regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in renovate-config.js
+ WARN: Config needs migrating
+       "configType": "renovate-config.js",
+       "originalConfig": {
+         "requireConfig": "ignored",
+         "onboarding": false,
+         "platform": "github",
+         "repositories": ["Rayahhhmed/bazel-third-party-patch-build"],
+         "persistRepoData": true,
+         "baseBranches": ["main"],
+         "addLabels": ["renovate"],
+         "branchConcurrentLimit": 0,
+         "prConcurrentLimit": 0,
+         "prHourlyLimit": 0,
+         "enabledManagers": ["bazel", "bazel-module"],
+         "includePaths": ["MODULE.bazel", "WORKSPACE"],
+         "ignorePaths": ["**/node_modules/**", "**/bazel-*/**"],
+         "bazel": {
+           "fileMatch": [
+             "(^|/)WORKSPACE(|\\.bazel|\\.bzlmod)$",
+             "\\.WORKSPACE\\.bazel$",
+             "\\.bzl$",
+             "\\.MODULE\\.bazel$",
+             "(^|/)MODULE\\.bazel$",
+             "(^|/).*\\.MODULE\\.bazel$"
+           ]
+         },
+         "bazel-module": {
+           "fileMatch": [
+             "\\.MODULE\\.bazel$",
+             "(^|/)MODULE\\.bazel$",
+             "(^|/).*\\.MODULE\\.bazel$"
+           ]
+         }
+       },
+       "migratedConfig": {
+         "requireConfig": "ignored",
+         "onboarding": false,
+         "platform": "github",
+         "repositories": ["Rayahhhmed/bazel-third-party-patch-build"],
+         "persistRepoData": true,
+         "baseBranchPatterns": ["main"],
+         "addLabels": ["renovate"],
+         "branchConcurrentLimit": 0,
+         "prConcurrentLimit": 0,
+         "prHourlyLimit": 0,
+         "enabledManagers": ["bazel", "bazel-module"],
+         "includePaths": ["MODULE.bazel", "WORKSPACE"],
+         "ignorePaths": ["**/node_modules/**", "**/bazel-*/**"],
+         "bazel": {
+           "managerFilePatterns": [
+             "/(^|/)WORKSPACE(|\\.bazel|\\.bzlmod)$/",
+             "/\\.WORKSPACE\\.bazel$/",
+             "/\\.bzl$/",
+             "/\\.MODULE\\.bazel$/",
+             "/(^|/)MODULE\\.bazel$/",
+             "/(^|/).*\\.MODULE\\.bazel$/"
+           ]
+         },
+         "bazel-module": {
+           "managerFilePatterns": [
+             "/\\.MODULE\\.bazel$/",
+             "/(^|/)MODULE\\.bazel$/",
+             "/(^|/).*\\.MODULE\\.bazel$/"
+           ]
+         }
+       }
+DEBUG: File config
+       "config": {
+         "requireConfig": "ignored",
+         "onboarding": false,
+         "platform": "github",
+         "repositories": ["Rayahhhmed/bazel-third-party-patch-build"],
+         "persistRepoData": true,
+         "baseBranchPatterns": ["main"],
+         "addLabels": ["renovate"],
+         "branchConcurrentLimit": 0,
+         "prConcurrentLimit": 0,
+         "prHourlyLimit": 0,
+         "enabledManagers": ["bazel", "bazel-module"],
+         "includePaths": ["MODULE.bazel", "WORKSPACE"],
+         "ignorePaths": ["**/node_modules/**", "**/bazel-*/**"],
+         "bazel": {
+           "managerFilePatterns": [
+             "/(^|/)WORKSPACE(|\\.bazel|\\.bzlmod)$/",
+             "/\\.WORKSPACE\\.bazel$/",
+             "/\\.bzl$/",
+             "/\\.MODULE\\.bazel$/",
+             "/(^|/)MODULE\\.bazel$/",
+             "/(^|/).*\\.MODULE\\.bazel$/"
+           ]
+         },
+         "bazel-module": {
+           "managerFilePatterns": [
+             "/\\.MODULE\\.bazel$/",
+             "/(^|/)MODULE\\.bazel$/",
+             "/(^|/).*\\.MODULE\\.bazel$/"
+           ]
+         }
+       }
+DEBUG: CLI config
+       "config": {}
+DEBUG: Env config
+       "config": {"hostRules": [], "token": "***********"}
+DEBUG: Resolved global extends
+       "config": undefined
+DEBUG: Combined config
+       "config": {
+         "requireConfig": "ignored",
+         "onboarding": false,
+         "platform": "github",
+         "repositories": ["Rayahhhmed/bazel-third-party-patch-build"],
+         "persistRepoData": true,
+         "baseBranchPatterns": ["main"],
+         "addLabels": ["renovate"],
+         "branchConcurrentLimit": 0,
+         "prConcurrentLimit": 0,
+         "prHourlyLimit": 0,
+         "enabledManagers": ["bazel", "bazel-module"],
+         "includePaths": ["MODULE.bazel", "WORKSPACE"],
+         "ignorePaths": ["**/node_modules/**", "**/bazel-*/**"],
+         "bazel": {
+           "managerFilePatterns": [
+             "/(^|/)WORKSPACE(|\\.bazel|\\.bzlmod)$/",
+             "/\\.WORKSPACE\\.bazel$/",
+             "/\\.bzl$/",
+             "/\\.MODULE\\.bazel$/",
+             "/(^|/)MODULE\\.bazel$/",
+             "/(^|/).*\\.MODULE\\.bazel$/"
+           ]
+         },
+         "bazel-module": {
+           "managerFilePatterns": [
+             "/\\.MODULE\\.bazel$/",
+             "/(^|/)MODULE\\.bazel$/",
+             "/(^|/).*\\.MODULE\\.bazel$/"
+           ]
+         },
+         "hostRules": [],
+         "token": "***********"
+       }
+DEBUG: Enabling forkProcessing while in non-autodiscover mode
+DEBUG: Enabling onboardingNoDeps while in non-autodiscover mode
+DEBUG: Found valid git version: 2.50.1
+DEBUG: Setting global hostRules
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: hostRules: authentication already set for api.github.com
+DEBUG: Using queue: host=api.github.com, concurrency=16
+DEBUG: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {
+           "username": "Rayahhhmed",
+           "name": "Raiyan Ahmed",
+           "id": 80839724
+         },
+         "userEmail": "raiyan.ahmed@gmail.com"
+       },
+       "renovateUsername": "Rayahhhmed"
+DEBUG: Using platform gitAuthor: Raiyan Ahmed <raiyan.ahmed@gmail.com>
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: Using baseDir: /tmp/renovate
+DEBUG: Using cacheDir: /tmp/renovate/cache
+DEBUG: Using containerbaseDir: /tmp/renovate/cache/containerbase
+DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+ INFO: Repository started (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "renovateVersion": "0.0.0-semantic-release"
+DEBUG: Using localDir: /tmp/renovate/repos/github/Rayahhhmed/bazel-third-party-patch-build (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: initRepo("Rayahhhmed/bazel-third-party-patch-build") (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: hostRules: authentication already set for api.github.com (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Rayahhhmed/bazel-third-party-patch-build default branch = main (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Issues cache: Adding 0 issues to reconcile queue (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Using personal access token for git init (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: fetchBranchCommits(): url=https://**redacted**@github.com/Rayahhhmed/bazel-third-party-patch-build.git (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Resetting npmrc (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Resetting npmrc (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: checkOnboarding() (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: isOnboarded() (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Config file will be ignored (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Repo is onboarded (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: migrateAndValidate() (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: No config migration necessary (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Found repo ignorePaths (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "ignorePaths": ["**/node_modules/**", "**/bazel-*/**"]
+DEBUG: No vulnerability alerts enabled for repo (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: No vulnerability alerts found (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: baseBranches (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "baseBranches": ["main"]
+DEBUG: baseBranch: main (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: extract() (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Setting current branch to main (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: syncGit(): Initializing git repository into /tmp/renovate/repos/github/Rayahhhmed/bazel-third-party-patch-build (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Performing blobless clone (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: git clone completed (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+       "durationMs": 2146
+DEBUG: latest repository commit (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+       "latestCommit": {
+         "hash": "cae588794eb1d5532f9f99afd47834db9d883ed3",
+         "date": "2025-07-28T17:11:35+10:00",
+         "message": "adding bazel mod",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "",
+         "author_name": "Raiyan Ahmed",
+         "author_email": "raiyan@canva.com"
+       }
+DEBUG: Current branch SHA: cae588794eb1d5532f9f99afd47834db9d883ed3 (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: latest commit (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+       "branchName": "main",
+       "latestCommitDate": "2025-07-28T17:11:35+10:00",
+       "sha": "cae588794eb1d5532f9f99afd47834db9d883ed3"
+DEBUG: Using file pattern: /(^|/)WORKSPACE(|\.bazel|\.bzlmod)$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /\.WORKSPACE\.bazel$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /\.bzl$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /(^|/)WORKSPACE(|\.bazel|\.bzlmod)$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /\.WORKSPACE\.bazel$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /\.bzl$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /\.MODULE\.bazel$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /(^|/)MODULE\.bazel$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /(^|/).*\.MODULE\.bazel$/ for manager bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /(^|/|\.)MODULE\.bazel$/ for manager bazel-module (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /\.MODULE\.bazel$/ for manager bazel-module (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /(^|/)MODULE\.bazel$/ for manager bazel-module (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Using file pattern: /(^|/).*\.MODULE\.bazel$/ for manager bazel-module (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Matched 1 file(s) for manager bazel: MODULE.bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Matched 1 file(s) for manager bazel-module: MODULE.bazel (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: manager extract durations (ms) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+       "managers": {"bazel": 8, "bazel-module": 9}
+DEBUG: Found bazel package files (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Found 1 package file(s) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Manager explicitly enabled in "enabledManagers" config, but found no results. Possible config error? (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+       "manager": "bazel-module"
+ INFO: Dependency extraction complete (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+       "stats": {
+         "managers": {"bazel": {"fileCount": 1, "depCount": 1}},
+         "total": {"fileCount": 1, "depCount": 1}
+       }
+DEBUG: baseBranch: main (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Package releases lookups complete (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Repository libYears (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+       "libYears": {"managers": {"bazel": 0.9006479261796042}, "total": 0.9006479261796042},
+       "dependencyStatus": {"outdated": 1, "total": 1}
+DEBUG: branchifyUpgrades (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: detectSemanticCommits() (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: getCommitMessages (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: semanticCommits: detected "unknown" (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: semanticCommits: disabled (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: 1 flattened updates found: libheif (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: Returning 1 branch(es) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: config.repoIsOnboarded=true (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+DEBUG: packageFiles with updates (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main)
+       "config": {
+         "bazel": [
+           {
+             "deps": [
+               {
+                 "datasource": "github-releases",
+                 "depType": "http_archive",
+                 "depName": "libheif",
+                 "packageName": "strukturag/libheif",
+                 "currentValue": "v1.18.2",
+                 "managerData": {"idx": 0},
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "v1.20.1",
+                     "newValue": "v1.20.1",
+                     "releaseTimestamp": "2025-07-02T13:08:28.000Z",
+                     "newVersionAgeInDays": 25,
+                     "newMajor": 1,
+                     "newMinor": 20,
+                     "newPatch": 1,
+                     "updateType": "minor",
+                     "isBreaking": false,
+                     "libYears": 0.9006479261796042,
+                     "branchName": "renovate/libheif-1.x"
+                   }
+                 ],
+                 "versioning": "semver-coerced",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/strukturag/libheif",
+                 "registryUrl": "https://github.com",
+                 "mostRecentTimestamp": "2025-07-02T13:08:28.000Z",
+                 "currentVersion": "v1.18.2",
+                 "currentVersionTimestamp": "2024-08-07T19:27:55.000Z",
+                 "currentVersionAgeInDays": 354,
+                 "isSingleVersion": true,
+                 "fixedVersion": "v1.18.2"
+               }
+             ],
+             "packageFile": "MODULE.bazel"
+           }
+         ]
+       }
+DEBUG: detectSemanticCommits() (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: semanticCommits: returning "disabled" from cache (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: processRepo() (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Processing 1 branch: renovate/libheif-1.x (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: getBranchPr(renovate/libheif-1.x) (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: findPr(renovate/libheif-1.x, undefined, open) (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: PR cache: cached data not found, creating new cache (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: PR cache: initial fetch (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: http cache: saving https://api.github.com/repos/Rayahhhmed/bazel-third-party-patch-build/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag="427b7d2b5bb7d7e1711150690298965a324bfd423813eb08b1461cf2ed8b5481", lastModified=undefined) (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: PR cache: Filtered 0 PRs to 0 (user=Rayahhhmed) (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: PR cache: getPrList success (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "pullsTotal": 0,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: 0 PRs are currently open (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: ConcurrentPRs count = 0 (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: 0 already existing branches found. (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Branches count = 0 (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Calculating PRs created so far in this hour currentHourStart=2025-07-28T07:00:00.000Z (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: 0 PRs have been created so far in this hour. (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: HourlyPRs count = 0 (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: syncBranchState() (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: getBranchPr(renovate/libheif-1.x) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: findPr(renovate/libheif-1.x, undefined, open) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: branchExists=false (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: findPr(renovate/libheif-1.x, Update dependency libheif to v1.20.1, !open) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: prAlreadyExisted=false (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Open PR Count: 0, Existing Branch Count: 0, Hourly PR Count: 0 (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: prHourlyLimit of the upgrades present in this branch (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "limits": [{"depName": "libheif", "prHourlyLimit": 0}]
+DEBUG: prHourlyLimit of this branch is unlimited, because atleast one of the upgrade has it's prHourlyLimit set to "No limit" ie. 0 or null (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: branchConcurrentLimit of the upgrades present in this branch (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "limits": [{"depName": "libheif", "branchConcurrentLimit": 0}]
+DEBUG: branchConcurrentLimit of this branch is unlimited, because atleast one of the upgrade has it's branchConcurrentLimit set to "No limit" ie. 0 or null (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Checking schedule(schedule=at any time, tz=null, now=2025-07-28T07:22:15.513Z) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: No schedule defined (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: GET https://api.github.com/repos/Rayahhhmed/bazel-third-party-patch-build/branches/main/protection = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=388) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: No branch protection found for main (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Converting rebaseWhen=auto to rebaseWhen=conflicted because no rule for behind-base-branch applies (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Branch needs creating (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Setting current branch to main (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: latest commit (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "branchName": "main",
+       "latestCommitDate": "2025-07-28T17:11:35+10:00",
+       "sha": "cae588794eb1d5532f9f99afd47834db9d883ed3"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Starting search at index 423 (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, packageFile=MODULE.bazel, branch=renovate/libheif-1.x)
+       "depName": "libheif"
+DEBUG: Found match at index 423 (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, packageFile=MODULE.bazel, branch=renovate/libheif-1.x)
+       "depName": "libheif"
+DEBUG: Contents updated (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, packageFile=MODULE.bazel, branch=renovate/libheif-1.x)
+       "depName": "libheif"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: hostRules: no authentication for github.com (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "libheif",
+    patch_args = ["-p1"],
+    patches = [
+        "//:third_party/libheif/libheif.patch",
+    ],
+    sha256 = "55cc76b77c533151fc78ba58ef5ad18562e84da403ed749c3ae017abaf1e2090",
+    strip_prefix = "libheif-1.20.1",
+    urls = [
+        "https://github.com/strukturag/libheif/releases/download/v1.20.1/libheif-1.20.1.tar.gz",
+    ],
+)
+
+DEBUG: Updated 1 package files (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Updated 1 lock files (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "updatedArtifacts": ["MODULE.bazel"]
+DEBUG: 1 file(s) to commit (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Preparing files for committing to branch renovate/libheif-1.x (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Setting git author name: Raiyan Ahmed (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Setting git author email: raiyan.ahmed@gmail.com (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: git commit (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/libheif-1.x",
+         "commit": "7429e5937f7bce213bf469eb731c89d41f1cbdeb",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 3, "deletions": 3}
+       }
+DEBUG: Pushing refSpec renovate/libheif-1.x:renovate/libheif-1.x (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: git push (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/libheif-1.x",
+             "remote": "refs/heads/renovate/libheif-1.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/libheif-1.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/libheif-1.x' on GitHub by visiting:",
+             "https://github.com/Rayahhhmed/bazel-third-party-patch-build/pull/new/renovate/libheif-1.x"
+           ],
+           "pullRequestUrl": "https://github.com/Rayahhhmed/bazel-third-party-patch-build/pull/new/renovate/libheif-1.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: latest commit (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "branchName": "main",
+       "latestCommitDate": "2025-07-28T17:11:35+10:00",
+       "sha": "cae588794eb1d5532f9f99afd47834db9d883ed3"
+ INFO: Branch created (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "commitSha": "7429e5937f7bce213bf469eb731c89d41f1cbdeb"
+DEBUG: Ensuring PR (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: There are 0 errors and 0 warnings (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: getBranchPr(renovate/libheif-1.x) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: findPr(renovate/libheif-1.x, undefined, open) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: findPr(renovate/libheif-1.x, undefined, closed) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Fetching changelog: https://github.com/strukturag/libheif (v1.18.2 -> v1.20.1) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: http cache: saving https://api.github.com/repos/strukturag/libheif (etag=W/"a6e27d5ae1499ede7347ab518dcce70acb8669ee291977fce6dd186c74ce168a", lastModified=Sun, 27 Jul 2025 21:32:41 GMT) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: http cache: saving https://api.github.com/repos/strukturag/libheif/git/trees/master (etag=W/"a9d6334407a2af3e498154c3405e5a576338d2712b10e74d2000ceac9cd630a1", lastModified=Sun, 27 Jul 2025 21:32:41 GMT) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Creating PR (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "prTitle": "Update dependency libheif to v1.20.1"
+DEBUG: prHourlyLimit of the upgrades present in this branch (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "limits": [{"depName": "libheif", "prHourlyLimit": 0}]
+DEBUG: prHourlyLimit of this branch is unlimited, because atleast one of the upgrade has it's prHourlyLimit set to "No limit" ie. 0 or null (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: prConcurrentLimit of the upgrades present in this branch (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "limits": [{"depName": "libheif", "prConcurrentLimit": 0}]
+DEBUG: prConcurrentLimit of this branch is unlimited, because atleast one of the upgrade has it's prConcurrentLimit set to "No limit" ie. 0 or null (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Creating PR (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "title": "Update dependency libheif to v1.20.1",
+       "head": "Rayahhhmed:renovate/libheif-1.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "pr": 1,
+       "draft": false
+DEBUG: Adding labels 'renovate' to #1 (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+ INFO: PR created (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+       "pr": 1,
+       "prTitle": "Update dependency libheif to v1.20.1"
+DEBUG: addParticipants(pr=1) (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: setPrCache() (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: Created Pull Request #1 (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: PR is not configured for automerge (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: setBranchCommit() (repository=Rayahhhmed/bazel-third-party-patch-build, baseBranch=main, branch=renovate/libheif-1.x)
+DEBUG: getBranchPr(renovate/libheif-1.x) (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: findPr(renovate/libheif-1.x, undefined, open) (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Found PR #1 (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: No renovate config file found (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Config does not need migration (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: ensureDependencyDashboard() (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Closing Dependency Dashboard (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Retrieving issueList (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Retrieved 0 issues (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Issues cache: Setting 0 issues in cache (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: checkReconfigureBranch() (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: No reconfigure branch found (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Removing any stale branches (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: config.repoIsOnboarded=true (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Branch lists (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "branchList": ["renovate/libheif-1.x"],
+       "renovateBranches": ["renovate/libheif-1.x"]
+DEBUG: remainingBranches= (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: No branches to clean up (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Branch summary (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "cae588794eb1d5532f9f99afd47834db9d883ed3"}],
+       "branches": [
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "cae588794eb1d5532f9f99afd47834db9d883ed3",
+           "branchName": "renovate/libheif-1.x",
+           "branchSha": "7429e5937f7bce213bf469eb731c89d41f1cbdeb",
+           "isModified": false,
+           "isPristine": true
+         }
+       ],
+       "defaultBranch": "main",
+       "inactiveBranches": []
+DEBUG: branches info extended (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "branchesInformation": [
+         {
+           "branchName": "renovate/libheif-1.x",
+           "prNo": 1,
+           "prTitle": "Update dependency libheif to v1.20.1",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "github-releases",
+               "depName": "libheif",
+               "displayPending": "",
+               "fixedVersion": "v1.18.2",
+               "currentVersion": "v1.18.2",
+               "currentValue": "v1.18.2",
+               "newValue": "v1.20.1",
+               "newVersion": "v1.20.1",
+               "packageFile": "MODULE.bazel",
+               "updateType": "minor",
+               "packageName": "strukturag/libheif"
+             }
+           ]
+         }
+       ]
+DEBUG: Renovate repository PR statistics (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "stats": {"total": 1, "open": 1, "closed": 0, "merged": 0}
+DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=Rayahhhmed/bazel-third-party-patch-build)
+DEBUG: Repository timing splits (milliseconds) (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "splits": {"init": 1403, "extract": 2375, "lookup": 602, "onboarding": 1, "update": 7022},
+       "total": 11852
+DEBUG: Package cache statistics (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "get": {"count": 27, "avgMs": 0, "medianMs": 0, "maxMs": 2, "totalMs": 5},
+       "set": {"count": 27, "avgMs": 3, "medianMs": 2, "maxMs": 11, "totalMs": 69}
+DEBUG: Datasource cache statistics (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "github-releases": {"https://github.com": {"hit": 0, "miss": 0, "set": 0, "skip": 2}},
+       "github-tags": {"https://api.github.com": {"hit": 0, "miss": 0, "set": 0, "skip": 1}}
+DEBUG: HTTP statistics (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "hosts": {
+         "api.github.com": {
+           "count": 10,
+           "reqAvgMs": 540,
+           "reqMedianMs": 479,
+           "reqMaxMs": 1005,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         }
+       },
+       "requests": 10
+DEBUG: HTTP cache statistics (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "https://api.github.com": {
+         "/repos/Rayahhhmed/bazel-third-party-patch-build/pulls": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/repos/strukturag/libheif": {"hit": 0, "miss": 1},
+         "/repos/strukturag/libheif/git/trees/master": {"hit": 0, "miss": 1}
+       }
+DEBUG: Lookup statistics (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "github-releases": {"count": 1, "avgMs": 557, "medianMs": 557, "maxMs": 557, "totalMs": 557}
+DEBUG: Cache fallback URLs (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "count": 0,
+       "hits": {}
+ INFO: Repository finished (repository=Rayahhhmed/bazel-third-party-patch-build)
+       "cloned": true,
+       "durationMs": 11852
+DEBUG: Checking file package cache for expired items
+DEBUG: Deleted 0 of 27 file cached entries in 17ms
